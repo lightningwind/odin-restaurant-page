@@ -1,1 +1,3 @@
-console.log('Hello World!');
+import loadPage from "./pageLoad";
+
+loadPage();
