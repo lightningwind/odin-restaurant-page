@@ -5,37 +5,37 @@ import createRestaurantHomePage from "./restaurant";
 const createTabs = () => {
   const contentEle = document.querySelector('#content');
 
-  const div1 = document.createElement('div');
-  const div2 = document.createElement('div');
-  const div3 = document.createElement('div');
+  const btn1 = document.createElement('button');
+  const btn2 = document.createElement('button');
+  const btn3 = document.createElement('button');
 
-  div1.setAttribute('id', 'home-btn');
-  div2.setAttribute('id', 'menu-btn');
-  div3.setAttribute('id', 'contact-btn');
+  btn1.setAttribute('id', 'home-btn');
+  btn2.setAttribute('id', 'menu-btn');
+  btn3.setAttribute('id', 'contact-btn');
 
-  div1.classList.add('tab');
-  div2.classList.add('tab');
-  div3.classList.add('tab');
+  btn1.classList.add('tab');
+  btn2.classList.add('tab');
+  btn3.classList.add('tab');
 
-  div1.textContent = 'Home';
-  div2.textContent = 'Menu';
-  div3.textContent = 'Contact';
+  btn1.textContent = 'Home';
+  btn2.textContent = 'Menu';
+  btn3.textContent = 'Contact';
 
-  contentEle.appendChild(div1);
-  contentEle.appendChild(div2);
-  contentEle.appendChild(div3);
+  contentEle.appendChild(btn1);
+  contentEle.appendChild(btn2);
+  contentEle.appendChild(btn3);
 
-  div1.addEventListener('click', () => {
+  btn1.addEventListener('click', () => {
     clearContent();
     createRestaurantHomePage();
   })
 
-  div2.addEventListener('click', () => {
+  btn2.addEventListener('click', () => {
     clearContent();
     createMenuPage();
   })
 
-  div3.addEventListener('click', () => {
+  btn3.addEventListener('click', () => {
     clearContent();
     createContactPage();
   })
